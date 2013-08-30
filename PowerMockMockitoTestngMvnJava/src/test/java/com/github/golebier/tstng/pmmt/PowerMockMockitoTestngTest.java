@@ -1,11 +1,10 @@
 package com.github.golebier.tstng.pmmt;
 
-import org.junit.Assert;
-import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
-import org.powermock.modules.junit4.PowerMockRunner;
+import org.powermock.modules.testng.PowerMockTestCase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
@@ -14,9 +13,9 @@ import org.testng.annotations.Test;
  *         http://www.linkedin.com
  *         /pub/rados%C5%82aw-go%C5%82%C4%99biewski/70/832/35
  */
-@RunWith(PowerMockRunner.class)
+//@RunWith(PowerMockRunner.class)
 @PrepareForTest(ObjectWithStaticMethod.class)
-public class PowerMockMockitoTestngTest {
+public class PowerMockMockitoTestngTest extends PowerMockTestCase {
     private static final String CORRECT_PARAM = "";
     
     @Test
